@@ -2,11 +2,12 @@
 This module provides a simple way to communicate with an [Kodi](http://kodi.tv) media center installation.
 It should not be restricted to a specific version of kodi, as it pulls all its information about the available methods from `JSONRPC.Introspect`.
 
-Install via `npm install kodi-ws`
+This is browser port of [kodi-ws](https://github.com/PaulAvery/kodi-ws.git) module. You will need webpack/
+browserify/other require() aware module loader. If you want to run in node use original [kodi-ws] (https://github.com/PaulAvery/kodi-ws.git).  
 
 ## Initiate
 ```js
-var kodi = require('kodi-ws');
+var kodi = require('kodi-websocket');
 
 kodi('localhost', 9090).then(function(connection) {
 	/* Do something with the connection */
@@ -92,7 +93,7 @@ Notice the `Promise.all()` is optional and used here to have simpler sample code
 And just for good measure an example which uses ES7 `async` functions.
 
 ```js
-let kodi = require('kodi-ws')('localhost', 9090);
+let kodi = require('kodi-websocket')('localhost', 9090);
 
 async function doStuff() {
 	let con = await kodi;

@@ -1,17 +1,18 @@
 {
-  "name": "kodi-ws",
-  "version": "2.4.3",
+  "name": "kodi-websocket",
+  "version": "2.4.300",
   "main": "lib/kodi-ws.js",
   "author": "Florian Albertz",
   "contributors": [
+    "piromicron",
     "Links 2004",
     "Bram van Oploo"
   ],
   "license": "BSD-3-Clause",
-  "description": "A wrapper for the kodi jsonrpc interface",
+  "description": "A wrapper for the Kodi jsonrpc interface over websocket. Run in browser (not in node).",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PaulAvery/kodi-ws.git"
+    "url": "https://github.com/piromicron/kodi-websocket.git"
   },
   "keywords": [
     "kodi",
@@ -24,8 +25,7 @@
   "dependencies": {
     "has-value": "^0.2.0",
     "jrpc-schema": "^2.1.0",
-    "set-value": "^0.2.0",
-    "ws": "^1.1.1"
+    "set-value": "^0.2.0"
   },
   "devDependencies": {
     "eslint": "^1.9.0",
