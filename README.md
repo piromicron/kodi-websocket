@@ -3,7 +3,9 @@ This module provides a simple way to communicate with an [Kodi](http://kodi.tv) 
 It should not be restricted to a specific version of kodi, as it pulls all its information about the available methods from `JSONRPC.Introspect`.
 
 This is browser port of [kodi-ws](https://github.com/PaulAvery/kodi-ws.git) module. You will need webpack/
-browserify/other require() aware module loader. If you want to run in node use original [kodi-ws] (https://github.com/PaulAvery/kodi-ws.git).  
+browserify/other require() aware module loader. If you want to run in node use original [kodi-ws](https://github.com/PaulAvery/kodi-ws.git).  
+
+Install via `npm install kodi-websocket`
 
 ## Initiate
 ```js
@@ -107,6 +109,7 @@ doStuff().catch(e => console.error(e));
 
 ## More examples
 Look for more examples in the [examples](examples) directory.
+There is no ready to run build config yet, sorry. You will need to make an html page, npm instll ..., bundle with webpack/browserify/etc. yourself.  
 
 ## Kodi's JSON-RPC API
 You can find kodi's official documentation of the JSON-RCP API [here](http://kodi.wiki/view/JSON-RPC_API) and the full list of available commands (for protocol version 6) [here](http://kodi.wiki/view/JSON-RPC_API/v6).
